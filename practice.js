@@ -19,7 +19,7 @@ const me = {
   age:22
 };
 
-me.name;
+//alert(me.name);
 
 ////////// PROBLEM 2 //////////
 
@@ -67,7 +67,10 @@ favoriteThings.book = 'Harry Potter';
   Using dot notation, add another key (or property) to your backPack object that is named color, with the value being the color of your backpack. 
 */
 
-//Code here
+const backPack = {};
+const item = 'firstPocket';
+backPack[item] = 'chapstick';
+backPack.color = 'blue';
 
 
 
@@ -75,7 +78,7 @@ favoriteThings.book = 'Harry Potter';
   After you do the above, alert your entire backPack object.
 */
 
-//Code here
+//alert(backPack);
 
 
 
@@ -85,7 +88,7 @@ Alerting to see the data in your Object doesn't work so well.
 Instead, console.log your whole backPack object and then check out the console. 
 */
 
-//Code here
+console.log(backPack);
 
 
 
@@ -108,7 +111,14 @@ var user2 = {
   Make that change without modifying the original object code above.
 */
 
-//Code Here
+function editUser(newName, newEmail, user){
+  user.name = newName;
+  user.email = newEmail;
+  return user;
+}
+
+editUser('Tyler S. McGinnis', 'tyler.mcginnis@devmounta.in', user2);
+console.log(user2);
 
 
 
@@ -120,7 +130,7 @@ var user2 = {
   Create an empty object called methodCollection.
 */
 
-//Code Here
+const methodCollection = {};
 
 
 
@@ -129,15 +139,20 @@ var user2 = {
   One called 'alertHello' which alerts 'hello' and another method called 'logHello' which logs 'hello' to the console. 
 */
 
-//Code Here
-
+methodCollection.alertHello = function(){
+  alert('hello');
+}
+methodCollection.logHello = function(){
+  console.log('hello');
+}
 
 
 /*
   Now call your alertHello and logHello methods.
 */
 
-//Code Here
+methodCollection.alertHello();
+methodCollection.logHello();
 
 
 
@@ -148,7 +163,9 @@ var user2 = {
   Return a new object with all of the information that you passed in.
 */
 
-//Code Here
+function makePerson(name, birthday, ssn){
+  return {name, birthday, ssn};
+}
 
 
 
@@ -159,6 +176,11 @@ var user2 = {
   Return that object so that whenever you invoke makeCard, you get a brand new credit card.
 */
 
-//Code Here
+function makeCard(cardNumber, expirationDate, securityCode){
+  return {cardNumber, expirationDate, securityCode};
+}
 
 
+/***********
+ * remember to un-comment of all the commented out code!!!!!
+ ***********/
