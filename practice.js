@@ -14,9 +14,12 @@
   Then alert your name using dot notation.
 */
 
-//Code here
+const me = {
+  name:'Jared Tanner',
+  age:22
+};
 
-
+me.name;
 
 ////////// PROBLEM 2 //////////
 
