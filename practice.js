@@ -19,7 +19,7 @@ const me = {
   age:22
 };
 
-//alert(me.name);
+alert(me.name);
 
 ////////// PROBLEM 2 //////////
 
@@ -78,7 +78,7 @@ backPack.color = 'blue';
   After you do the above, alert your entire backPack object.
 */
 
-//alert(backPack);
+alert(backPack);
 
 
 
